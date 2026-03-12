@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+/* 전체 레이아웃 */
+.wrap{
+    width: 960px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+}
+/* 메뉴 */
+.navi{
+    background-color: #fdfdfd;
+    border-bottom: 1px solid #333;
+    padding: 10px 0;
+}
+.navi > ul{
+    display: flex;
+    gap: 10px;
+    width: 600px;
+    margin: 0 auto;
+    /* background-color: aliceblue; */
+}
+.navi > ul > li{
+    width: calc(100% / 4);
+    text-align: center;
+}
+.navi > ul > li > a{
+    display: block;
+    padding: 20px 0;
+    background-color: rgb(200, 247, 139);
+}
+.navi > ul > li > a:hover{
+    background-color: rgb(199, 248, 232);
+    color: rgb(90, 90, 90);
+}
+/* 이용안내 설명 */
+.container{
+    width: 400px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    /* background-color: blueviolet; */
+}
+.container > li {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+}
+.container h2{
+    padding-bottom: 10px;
+}
+/* 메뉴 해당하는 아이디로 타겟팅 */
+#intro:target{
+    background-color: #7a8359;
+    color: #fdfdfd;
+}
+#room:target{
+    background-color: #7a8359;
+    color: #fdfdfd;}
+#reservation:target{
+    background-color: #7a8359;
+    color: #fdfdfd;}
