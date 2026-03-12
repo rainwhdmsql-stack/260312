@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>혼자 만들고 있심데이</title>
+    <link rel="stylesheet" href="css/reservation_ex.css">
+</head>
+<body>
+    <div class="wrap">
+        <!-- index_ex.html 상단 메뉴 복사 -->
+        <nav class="navi">
+            <ul>
+            <li><a href="index_ex.html#adress">주소안내</a></li>
+            <li><a href="index_ex.html#time">이용시간</a></li>
+            <li><a href="index_ex.html#service">이용안내</a></li>
+            <li><a href="index_ex.html#notice">공지사항</a></li>
+            <li><a href="#">식사예약</a></li>
+        </ul>
+        </nav>
+        <!-- 예약자 정보 입력 -->
+        <fieldset>
+            <legend>예약자</legend>
+            <ul class="user">
+                <li>
+                    <label for="username">이름</label>
+                    <input type="text" placeholder="이름을 적어주세요" required>
+                </li>
+                <li>
+                    <label for="tel">전화번호</label>
+                    <input type="tel" placeholder="010-0000-0000" required>
+                </li>
+            </ul>
+        </fieldset>
+        <!-- 예약 내용 입력 -->
+        <fieldset>
+            <legend>예약 상세</legend>
+            <ul class="reservation">
+                <li>
+                    <label for="people">예약 인원</label>
+                    <input type="number" placeholder="0명" required>
+                </li>
+                    <li>
+                    <label>예약 날짜 및 시간</label>
+                    <input type="datetime-local" name="" id="" />
+                    <p class="date-time">
+                        예약 시간은 30분 단위로 가능합니다.
+                    </p>
+                </li>
+            </ul>
+        </fieldset>
+        <div class="btn-button">
+            <p class="btn-text">
+                예약 정보를 확인후 예약하기 버튼을 눌러주세요.
+            </p>
+            <button type="submit">예약하기</button>
+        </div>
+    </div>
+</body>
+</html>
